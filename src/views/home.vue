@@ -1,6 +1,6 @@
 <template lang="pug">
-    article.view.home
-        p Your Content Goes Here
+    #home
+        .cover
 </template>
 
 <script>
@@ -10,4 +10,14 @@ export default {
 </script>
 
 <style lang="scss">
+#home {
+    width: 100vw;
+    height: 100vh;
+    .cover {
+        background: url("../resources/cover.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
 </style>

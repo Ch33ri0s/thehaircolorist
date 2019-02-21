@@ -5,6 +5,10 @@
 // Third Party Libraries
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 body, html {
     color:rgb(50,50,50);

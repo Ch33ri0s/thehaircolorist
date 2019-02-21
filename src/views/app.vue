@@ -1,21 +1,24 @@
 <template lang="pug">
 .app
-    header
-        img.logo(src="resources/busy-logo.png")
-        h1 haircolorist
-        nav
-            li: router-link(exact to="/") Home
+    navbar
+    //- header
+    //-     img.logo(src="resources/busy-logo.png")
+    //-     h1 haircolorist
+    //-     nav
+    //-         li: router-link(exact to="/") Home
     .view-wrapper
         router-view 
     footer
-        span Copyright ©{{year}}  Busy Human LLC, All Rights Reserved
+        span Created & Designed by Tenyson Partridge {{year}}
 </template>
 
 <script>
 import router from "../router.js";
+import navbar from "../components/navbar.vue";
 
 export default {
     router,
+    components: { navbar },
     data () {
         return {
             year: (new Date()).getFullYear()
@@ -24,6 +27,16 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.app {
+    footer {
+        display: flex;
+        background: #bdccb7;
+        padding: 100px;
+        justify-content: center;
+        span {
+            color: white;
+        }
+    }
+}
 </style>

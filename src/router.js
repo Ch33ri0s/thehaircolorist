@@ -6,10 +6,18 @@ import EventHub from "./events.js";
 Vue.use(VueRouter);
 
 import HomeView from "views/home.vue";
+import ServicesView from "views/services.vue";
+import EducationView from "views/education.vue";
+import ShopView from "views/shop.vue";
+import AboutView from "views/about.vue";
 
 const router = new VueRouter({
     routes: [
-        { path: '/', component: HomeView, name: "Home" }
+        { path: '/', component: HomeView, name: "Home" },
+        { path: '/services', component: ServicesView, name: "Services" },
+        { path: '/education', component: EducationView, name: "Education" },
+        { path: '/shop', component: ShopView, name: "Shop" },
+        { path: '/about', component: AboutView, name: "About" }
     ]
 });
 
