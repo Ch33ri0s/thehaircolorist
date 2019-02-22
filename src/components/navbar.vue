@@ -1,7 +1,7 @@
 <template lang="pug">
   #navbar
     .nav-wrapper
-      .logo Thehaircolorist
+      .logo: router-link(exact to="/") Thehaircolorist
       ul
         li(v-for="(link, index) in links" :key="index")
           router-link(:to="link") {{link}}
@@ -25,6 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #navbar {
   width: 100%;
   height: 80px;
@@ -37,14 +38,17 @@ export default {
     align-items: center;
     max-width: 1920px;
     height: 100%;
-    .logo {
+    .logo a {
       position: relative;
       font-family: "Raleway", sans-serif;
       font-size: 32px;
       font-weight: lighter;
       letter-spacing: 2px;
-      padding-left: 20px;
+      margin-left: 20px;
       text-transform: uppercase;
+      text-decoration: none;
+      padding: 4px;
+      outline: none;
       color: #727272;
     }
     ul {
@@ -61,6 +65,7 @@ export default {
           color: #727272;
           font-size: 16px;
           text-decoration: none;
+          outline: none;
           padding-left: 20px;
           padding-right: 20px;
         }

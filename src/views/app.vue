@@ -7,7 +7,8 @@
     //-     nav
     //-         li: router-link(exact to="/") Home
     .view-wrapper
-        router-view 
+        transition(name="fade")
+            router-view 
     footer
         span Created & Designed by Tenyson Partridge {{year}}
 </template>

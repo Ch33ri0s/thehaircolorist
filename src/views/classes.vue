@@ -1,6 +1,6 @@
 <template lang="pug">
-    #education
-      p education
+    #classes
+      p classes
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
 </script>
 
 <style lang="scss">
-#education {
+#classes {
     width: 100vw;
     height: 100vh;
 }

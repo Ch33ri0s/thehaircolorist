@@ -12,12 +12,15 @@ export default {
 <style lang="scss">
 #home {
     width: 100vw;
-    height: 100vh;
+    height: 1080px;
     .cover {
-        background: url("../resources/cover.jpg");
+        width: 100%;
+        height: 100%;
+        background: url("/resources/cover.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        opacity: .1;
     }
 }
 </style>
