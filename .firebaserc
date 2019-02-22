@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "thehaircolorist"
+    "default": "thehaircolorist",
+    "staging": "thehaircolorist-7c03f"
   }
 }

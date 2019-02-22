@@ -4,7 +4,7 @@
       .logo Thehaircolorist
       ul
         li(v-for="(link, index) in links" :key="index")
-          router-link(exact to=`/${link}`) {{link}}
+          router-link(:to="link") {{link}}
         li: button Contact
         li: i.fas.fa-shopping-bag
         li: i.fas.fa-user
@@ -15,7 +15,7 @@ export default {
   name: "navbar",
   data() {
     return {
-      links: ["Home", "Services", "Education", "Shop", "About"]
+      links: ["Services", "Classes", "Shop", "About"]
     };
   },
   mounted() {

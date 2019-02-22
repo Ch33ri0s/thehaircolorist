@@ -29,6 +29,8 @@ export default {
 
 <style lang="scss">
 .app {
+    max-width: 100%;
+    overflow: hidden;
     footer {
         display: flex;
         background: #bdccb7;
