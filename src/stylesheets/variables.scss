@@ -1,0 +1,31 @@
+.btn-green {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  border: 1px solid #f2f2f2;
+  width: 150px;
+  height: 40px;
+  background: #bdccb7;
+  outline: none;
+  color: white;
+  border-radius: 1000px;
+  &:hover {
+    background: #c6d6c0;
+  }
+}
+
+.btn-hallow {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  border: 1px solid rgba(114, 114, 114, .85);
+  width: 150px;
+  height: 40px;
+  background: white;
+  outline: none;
+  color: #727272;
+  border-radius: 1000px;
+  &:hover {
+    background: #bdccb7;
+    border: 1px solid #f2f2f2;
+    color: white;
+  }
+}

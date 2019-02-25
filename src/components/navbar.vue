@@ -5,7 +5,7 @@
       ul
         li(v-for="(link, index) in links" :key="index")
           router-link(:to="link") {{link}}
-        li: button Contact
+        li: button.btn-green Contact
         li: i.fas.fa-shopping-bag
         li: i.fas.fa-user
 </template>
@@ -27,10 +27,12 @@ export default {
 <style lang="scss">
 
 #navbar {
+  position: relative;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  z-index: 9999;
   .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -61,34 +63,26 @@ export default {
         height: 100%;
         width: 100%;
         a {
-          font-family: "Playfair Display", sans-serif;
+          font-family: "Raleway", sans-serif;
           color: #727272;
-          font-size: 16px;
+          font-size: 17px;
           text-decoration: none;
           outline: none;
-          padding-left: 20px;
-          padding-right: 20px;
+          padding-left: 24px;
+          padding-right: 24px;
+          letter-spacing: 1px;
         }
         button {
-          font-size: 18px;
-          font-family: "Raleway", sans-serif;
-          font-weight: lighter;
           margin-left: 10px;
-          margin-right: 20px;
-          width: 150px;
-          height: 40px;
-          border: none;
-          background: #bdccb7;
-          outline: none;
-          color: white;
-          border-radius: 1000px;
+          margin-right: 30px;
         }
         svg {
-          font-size: 28px;
+          font-size: 35px;
           height: 100%;
           padding-left: 30px;
           padding-right: 30px;
-          border: 1px solid #f2f2f2;
+          border-left: 1px solid #f2f2f2;
+          border-right: 1px solid #f2f2f2;
           color: #727272;
           &:hover {
             color: #828282;

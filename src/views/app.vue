@@ -11,6 +11,11 @@
             router-view 
     footer
         span Created & Designed by Tenyson Partridge {{year}}
+        span
+            i.fab.fa-facebook-f
+            i.fab.fa-instagram
+            i.fab.fa-twitter
+
 </template>
 
 <script>
@@ -35,10 +40,21 @@ export default {
     footer {
         display: flex;
         background: #bdccb7;
-        padding: 100px;
-        justify-content: center;
+        height: 180px;
+        justify-content: space-evenly;
+        align-items: center;
         span {
             color: white;
+            padding: 10px;
+            svg {
+                font-size: 24px;
+                color: white;
+                margin: 14px;
+                &:hover {
+                    color: #f2f2f2;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

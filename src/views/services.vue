@@ -1,6 +1,7 @@
 <template lang="pug">
     #services
-      p services
+      .services-wrapper
+        
 </template>
 
 <script>
