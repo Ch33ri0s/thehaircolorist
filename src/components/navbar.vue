@@ -6,7 +6,7 @@
         li(v-for="(link, index) in links" :key="index")
           router-link(:to="link") {{link}}
         li: button.btn-green Contact
-        li: i.fas.fa-shopping-bag
+        //- li: i.fas.fa-shopping-bag
         li: i.fas.fa-user
 </template>
 
