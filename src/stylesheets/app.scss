@@ -3,7 +3,7 @@
 @import "variables";
 
 // Third Party Libraries
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Countryside');
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -14,11 +14,11 @@ body, html {
     color:rgb(50,50,50);
     background: white;  /* fallback for old browsers */
     margin:0;
-    padding:0;
+    padding:0px;
 }
 
 header, h1, h2, h3, h4, h5 {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 
 @import "header";

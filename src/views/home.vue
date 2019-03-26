@@ -22,38 +22,38 @@ export default {
 
 <style lang="scss">
 #home {
-  width: 100vw;
+  position: relative;
   .cover {
-    position: relative;
     width: 100vw;
     height: 100vh;
     background: url("/resources/cover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     .hero-wrapper {
-      display: flex;
+      display: flex; 
       justify-content: center;
       align-items: center;
       flex-direction: column;
       background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.45),
         rgba(255, 255, 255, 1)
       );
       width: 100%;
       height: 100%;
       position: relative;
       .title {
-        font-size: 80px;
+        font-size: 40px;
         color: #727272;
-        font-family: "Playfair Display", sans-serif;
-        font-weight: bolder;
+        font-family: "Raleway", sans-serif;
+        font-weight: lighter;
         padding-bottom: 20px;
         border-bottom: 1px solid rgba(114, 114, 114, 0.35);
       }
       .tagline {
-        font-size: 35px;
+        font-size: 21px;
         padding-top: 20px;
         padding-bottom: 100px;
         font-family: "Raleway", sans-serif;
